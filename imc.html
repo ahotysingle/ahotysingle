@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>IMC</title>
+    function calculine {
+      var appreciation="";
+      var tl=document formimc.taille.value;
+      var pds=document formimc.poids.value;
+      var res-imc=pds/(tl*tl);
+      if(res-imc<16,5)
+         appreciation="Denutrition";
+      else if(res-imc < 18,5)
+         appreciation="Maigre";
+      else if(res-imc < 25)
+         appreciation="Normal";
+      else if(res-imc < 30)
+         appreciation="Gros";
+      else if(res-imc > 30)
+         appreciation="Obèse";
+      else
+        alerte ("Veillez saisir des valeurs numerique");
+        document.formime.imc.value=res-imc;
+        document.formime.app.value=appreciation;
+          }
+
+  </head>
+  <body>
+
+    <form name="formimc">
+    <div class="imc">
+      IMC
+     </div>
+     <p> Taille:<input type="text" name="taille" value=""></p>
+     <p> Poids :<input type="text" name="poids" value=""></p>
+     <p><p><button class="btn btn-custom">calculer</button></p>
+     <p> <input type="boutton" value="calculer"> </p>
+     <p>IMC<input type="text" name="IMC" value=""> </p>
+     <p>Appreciation:<input type="text" name="app" value=""> </p>
+    </form>>
+  </body>
+</html>
